@@ -1,0 +1,40 @@
+.header {
+  color:blueviolet;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+}
+
+.menu {
+  display: inline;
+}
+
+.nav > menu:nth-child(odd) {
+color:red;
+}
+
+.container {
+}
+
+.container .sidebar {
+  float: left;
+  width: 20%;
+  margin: 0;
+}
+
+.container .sidebar ul li {
+  list-style-type: none;
+  border-style:solid;
+  border-width: 1px;
+}
+
+
+.container .content {
+  float: right;
+  width: 74%;
+
+  border-style:solid;
+  border-color:#6c5ce7;
+  border-width: 1px;
+  padding: 10px;
+}
