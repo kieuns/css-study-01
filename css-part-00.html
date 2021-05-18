@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>CSS 파일을 포함하는 방법</title>
+
+  <!-- css 파일을 포함하는 방식 (External CSS)(1) -->
+  <link rel="stylesheet" type="text/css" href="css-part-01.css">
+  <!-- css 파일을 포함하는 방식 (External CSS)(2) -->
+  <style type="text/css">
+    @import url("css/style.css");
+  </style>
+  <!-- css 파일을 포함하는 방식 (Internal CSS)) -->
+<style>
+body {background-color: linen;}
+h1 {  color: maroon;  margin-left: 40px;}
+</style>
+
+  <!-- js 파일을 포함하는 방식 -->
+  <script src="xx.js"></script>
+
+</head>
+<body> <!-- 시작 -->
+
+<!-- css 파일을 포함하는 방식 (Inline CSS)) -->
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+
+<!-- 본문 -->
+
+<!-- 종료 --></body>
+</html>

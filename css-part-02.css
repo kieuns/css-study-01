@@ -1,3 +1,4 @@
+
 .header {
   color:blueviolet;
   text-align: center;
@@ -5,36 +6,84 @@
   font-size: 1.5em;
 }
 
-.menu {
-  display: inline;
+.popup {
+  width: 100px;
+  height: 200px;
+  top: 10px;
+  left: 10px;
+  /* position: absolute; */ /* 페이지 좌표계로 고정, 스크롤 가능 */
+  position: fixed; /* 화면 고정, 스크롤해도 항상 같은 위치 */
+  background-color: rgba(204, 21, 21, 0.1);
 }
 
-.nav > menu:nth-child(odd) {
-color:red;
+.nav {
+  padding: 0.5em;
+  text-align: center;
+  border-style: dotted; border-width: 1px; border-color: lightgray;
+}
+.nav .menu {
+  padding: 0.5em;
+  text-align: center; /* 이게 먹히는게 신기하네 */
+  display: inline-block;
+  /* display: block; */
+  border-style: solid;
+}
+
+/* nth-child()를 확인하기 위한 css 사용 */
+.nav .menu:nth-child(odd) {
+  color:red;
 }
 
 .container {
+  border-style: dotted; border-width: 1px; border-color: red;
 }
 
 .container .sidebar {
+  border-style: dotted; border-width: 1px; border-color: crimson;
   float: left;
-  width: 20%;
-  margin: 0;
+  width: 60%;
+  padding: 1em;  
+}
+
+.container .sidebar ul{
+text-align: center;
 }
 
 .container .sidebar ul li {
-  list-style-type: none;
-  border-style:solid;
+  list-style-type: none; /* li 스타일에서 점을 뺀다 */
+  /*border-style: none none solid none; 이게 아님 */
+  border-bottom: 1px solid; 
   border-width: 1px;
+  padding: 0.3em; /* 선택시 배경색 채움 효과를 주려면 margin 보다는 padding 으로 공간 확보 */
+ 
+}
+
+/* 이게 아님 
+.container .sidebar ul li:nth-child(1) {
+  border-style: solid none none none;  // 첫번째 요소의 상단/하단 border 추가 
+}*/
+
+.container .sidebar ul li:first-child{
+  border-top: 1px solid;
+}
+
+.container .sidebar ul li:hover {
+  background-color:#6c5ce7;
 }
 
 
 .container .content {
   float: right;
-  width: 74%;
+  width: 70%;
+
+  color:white; /* 텍스트 색 */
 
   border-style:solid;
   border-color:#6c5ce7;
   border-width: 1px;
   padding: 10px;
+
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/341285cf-0809-4ef5-bc65-97e0a2888868/ddiadp6-ec6a8050-edcf-4489-9e67-59850ad616e8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM0MTI4NWNmLTA4MDktNGVmNS1iYzY1LTk3ZTBhMjg4ODg2OFwvZGRpYWRwNi1lYzZhODA1MC1lZGNmLTQ0ODktOWU2Ny01OTg1MGFkNjE2ZTguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jCA2CkRKVYQICLj76wi67MINlz9ZYtuD8sO2TGO2LjI");
+  /*background-position: -500px -500px;*/
+  background-size: 100%;
 }
