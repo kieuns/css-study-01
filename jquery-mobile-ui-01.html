@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>메인</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+</style>
+</head>
+<!-- END of head -->
+
+<body>
+  <div data-role="page">
+
+    <div data-role="header">
+      <h1>로컬 웹</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+
+      <!-- 이미지/하단버튼2개를 감싸는 테두리를 추가한다. -->
+      <div class="ui-body ui-body-a ui-corner-all">
+        <!-- 그룹으로 감싸주기 -->
+        <div class="ui-grid-solo">
+          <div class="ui-block-a">
+            <!-- 이미지는 가운데 정렬. style="" 안쪽에 있는 내용을 모두 사용해야 가운데 정렬이 된다. -->
+            <!-- How To Center Images : https://www.w3schools.com/howto/howto_css_image_center.asp -->
+            <img src="https://bit.ly/3c3XrJ4" style="width:40%; display:block;margin-left:auto;margin-right:auto;">
+            <!-- <input type="button" value="More"> -->
+          </div>
+        </div>
+        <div class="ui-grid-a">
+          <div class="ui-block-a"><a href="#" class="ui-shadow ui-btn ui-corner-all">버튼1</a></div>
+          <div class="ui-block-b"><a href="#" class="ui-shadow ui-btn ui-corner-all">버튼2</a></div>
+        </div>
+      </div>
+
+    </div><!-- /content -->
+
+    <div data-role="footer">
+      <h4>푸터</h4>
+    </div><!-- /footer -->
+
+  </div><!-- /page -->
+</body> <!-- END of body -->
+
+</html>
